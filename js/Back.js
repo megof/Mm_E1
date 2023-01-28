@@ -27,10 +27,8 @@ var app = new Vue({
             }
         },
         Invalid_User(){
-            //del
-            //console.log(this.Name.toUpperCase() +' - '+ this.User.toUpperCase())
-            //
-            if(this.Name.toUpperCase() === this.User.toUpperCase()){
+            if(this.Name.toUpperCase() === this.User.toUpperCase() || 
+                (this.Name+' '+this.LastN).toUpperCase() === this.User.toUpperCase()){
                 return false
             }
             return true
