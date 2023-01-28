@@ -3,12 +3,12 @@ var app = new Vue({
     el: "#app",
     data:{
         Message: "",
-        Name:"",
-        LastN:"",
-        User:"",
-        Birth:"",
-        Users:[],
-        Date:[ToDay.getFullYear(),ToDay.getMonth()+1,ToDay.getDate()],
+        Name: "",
+        LastN: "",
+        User: "",
+        Birth: "",
+        Users: [],
+        Date: [ToDay.getFullYear(),ToDay.getMonth()+1,ToDay.getDate()],
     },
     methods:{
         Save_User(){
@@ -28,7 +28,7 @@ var app = new Vue({
         },
         Invalid_User(){
             //del
-            console.log(this.Name.toUpperCase() +' - '+ this.User.toUpperCase())
+            //console.log(this.Name.toUpperCase() +' - '+ this.User.toUpperCase())
             //
             if(this.Name.toUpperCase() === this.User.toUpperCase()){
                 return false
@@ -36,11 +36,22 @@ var app = new Vue({
             return true
         },
         Calc_Age(){
-            let  = this.Birth.split('-')
-            this.Date.map(element => {
-                console.log(element)
-            })
-            return 1
+            let birth = this.Birth.split('-');
+            let age = 0;
+
+            birth[0]=Number(birth[0])
+            birth[1]=Number(birth[1])
+            birth[2]=Number(birth[2])
+
+            age = this.Date[0]-birth[0];
+            console.log(this.Date[0]+'-'+birth[0]+' '+(this.Date[0]-birth[0]))
+            console.log(this.Date[1]+'-'+birth[1]+' '+(this.Date[1]-birth[1]))
+            console.log(this.Date[2]+'-'+birth[2]+' '+(this.Date[2]-birth[2]))
+            if(this.Date[1]<birth[1] || (this.Date[1]==birth[1] && this.Date[2]<birth[2])){
+                console.log('-'+age-1)
+                age--;
+            }
+            return age
         },
         Generate(){
             return 123
