@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+     <div id="app">
+        <h1 v-text="Message"></h1>
+        <input v-model="Name" type="text" placeholder="Ingrese su nombre">
+        <input v-model="LastN" type="text" placeholder="Ingrese su apellido">
+        <input v-model="User" type="text" placeholder="Ingrese un usuario">
+        <input v-model="Birth" type="date" placeholder="Ingrese la fecha de nacimiento">
+        <button @click="Save_User">Crear usuario</button>
+     </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>  
+<script src="js/Back.js"></script>
+
+</html>
