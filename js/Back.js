@@ -21,7 +21,7 @@ var app = new Vue({
                     Password: this.Generate(0,0),
                     User: this.User,
                 })
-                this.Message = `${this.Users[0].User}`
+                this.Message = `Registrado!`
             }else{
                 this.Message = 'usuario inválido'
             }
