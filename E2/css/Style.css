@@ -1,26 +1,87 @@
-.container, img{
+img.container{    
+    transform: scaleX(-1);
+}
+.container{
+    border-radius: 7%;
     height: 380px;
-    overflow: hidden;
     position: relative;
     width: 380px;
 }
 .container:hover .over{
     opacity: 1;
-    transform: scale(1);
+}
+.container:hover .c_dcpt{
+    opacity: 0;
 }
 .over{
     background-color: rgba(234, 45, 45, 0.549);
+    border-radius: 7%;
     height: 100%;
     opacity: 0;
     position: absolute;
     top: 0;
     width: 100%;
 }
-
-span{
+.description{
+    color: white;
+    font-size: larger;
     left: 50%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+.dcto{
+    font-size: larger;
+}
+.c_dcto{
+    background-color: rgba(244, 67, 54, 0.953);
+    width: 85px;
+    height: 30px;
+    color: white;
+    position: absolute;
+    transform: translate(295px, -330px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.percent{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transform: translate(-115px, 49px);
+}
+.c_inf{
+    background-color: rgba(244, 67, 54, 0.953);
+    color: white;
+    width: 345px;
+    height: 30px;
+    border-radius: 10px 10px 10px;
+    position: absolute;
+    transform: translate(17px, -20px);align-items: center;
+    display:flex;
+    justify-content: center;
+}
+.c_dcpt{
+    text-align: center;
+    margin-top: 20px;
+}
+.c_dc{
+    width: 345px;
+    transform: translate(20px, 20px);
+}
+.dc1, .dc2{
+    color: rgba(234, 45, 45, 0.549);
+}
+.dc3{
+    color:  red;
+    font-size: larger;
+    align-self: center;
+}
+.dc5{
+    background-color:  red;
+    color: white;
+    border-color: red;
+    border-radius: 10%;
+    right: 10px;
 }
