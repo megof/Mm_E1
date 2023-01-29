@@ -1,4 +1,26 @@
+.container, img{
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    width: 380px;
+}
 .container:hover .over{
     opacity: 1;
     transform: scale(1);
+}
+.over{
+    background-color: rgba(234, 45, 45, 0.549);
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+span{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
