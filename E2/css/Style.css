@@ -13,6 +13,9 @@ img.container{
 .container:hover .c_dcpt{
     opacity: 0;
 }
+.container:hover .c_dc{
+    transform: translate(20px, -30px);
+}
 .over{
     background-color: rgba(234, 45, 45, 0.549);
     border-radius: 7%;
@@ -69,19 +72,35 @@ img.container{
 .c_dc{
     width: 345px;
     transform: translate(20px, 20px);
+    display: flex;
 }
 .dc1, .dc2{
     color: rgba(234, 45, 45, 0.549);
+    flex-grow: 1;
+    font-size: larger;
 }
 .dc3{
     color:  red;
     font-size: larger;
     align-self: center;
+    flex-grow: 1;
+}
+.dc4{
+
+    flex-grow: 1;
+    font-size: larger;
 }
 .dc5{
     background-color:  red;
     color: white;
     border-color: red;
     border-radius: 10%;
-    right: 10px;
+    right: 25%;
+    flex-grow: 1;
+    font-size: larger;
+}
+.cont2{
+    height: 380px;
+    position: relative;
+    width: 380px;
 }
