@@ -3,8 +3,6 @@
     height: 380px;
     width: 380px;
 }
-.dcto{
-}
 .c_dcto{
     background-color: rgba(244, 67, 54, 0.953);
     width: 85px;
@@ -22,4 +20,77 @@
     height: 40px;
     position: absolute;
     transform: translate(-115px, 49px);
+}
+.container2{
+    height: 380px;
+    width: 380px;
+}
+.menu{
+    width: 330;
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.menub{
+    margin-bottom: 10px;
+    width: 360px;
+    height: 30px;
+    color: white;
+    font-size: larger;
+    background-color: red;
+    border-color: red;
+    border-radius: 10px 10px 10px;
+    margin-bottom: 10px;
+}
+.menul{
+    margin-bottom: 5px;
+    color: red;
+    width: 360px;
+}
+.c_dc{
+    width: 360px;
+    margin-bottom: 10px;
+}
+.dc1, .dc2{
+    flex-grow: 1;
+    font-size: larger;
+}
+.dc3{
+    font-size: larger;
+    align-self: center;
+    flex-grow: 1;
+}
+.dc4{
+    color: red;
+    flex-grow: 1;
+    font-size: larger;
+}
+.dc5{
+    background-color:  red;
+    color: white;
+    border-color: red;
+    border-radius: 10px 10px 10px;
+    right: 25%;
+    width: 170px;
+    font-size: larger;
+}
+.dc6{
+    background-color: white;
+    color: black;
+    border-color: red;
+    border-radius: 10px 10px 10px;
+    right: 25%;
+    width: 170px;
+    font-size: larger;
+}
+.add{
+    color: red;
+    font-size: larger;
+}
+.menuta{
+    width: 360px;
+    border-radius: 10px 10px 10px;
+}
+.sp{
+    width: 20px;
 }
